@@ -1,0 +1,14 @@
+# Ignore Terraform local data
+.terraform/
+.terraform.lock.hcl
+
+# Ignore State files (these contain your infrastructure's "secrets")
+*.tfstate
+*.tfstate.backup
+
+# Ignore your private and public SSH keys
+id_rsa
+id_rsa.pub
+
+# Ignore sensitive variables
+*.tfvars
